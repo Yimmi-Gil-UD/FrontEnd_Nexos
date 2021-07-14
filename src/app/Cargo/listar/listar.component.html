@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="card"> 
+        <div class="card-header">
+            <h3>Cargos</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Descripción</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let cargo of cargos" class="text-center">
+                        <td>{{cargo.id}}</td>
+                        <td>{{cargo.descripcion}}</td>
+                    </tr>
+                    <td>
+                        <button class="btn btn-warning">Editar</button>
+                        <button class="btn btn-warning" style="margin-left: 10px;">Eliminar</button>
+                    </td>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>

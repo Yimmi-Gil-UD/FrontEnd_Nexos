@@ -1,0 +1,50 @@
+<br>
+<div class="container col-md-6">
+    <div class="card"> 
+        <div class="card-header">
+            <h3>Agregar Mercancia</h3>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <label for="">Cantidad:</label>
+                    <input type="text" class="from-control" [(ngModel)]="mercancia.cantidad" name="cantidad">
+                </div>
+
+                <div class="form-group">
+                    <label for="start">Fecha Actualización:</label>
+
+                    <input type="date" id="start"  [(ngModel)]="mercancia.fechaActualizacion"  name="fechaActualizacion"
+                           value="2018-07-22"
+                           min="2018-01-01" max="2021-12-31">
+                                   
+                    <!--input type="text" class="from-control" [(ngModel)]="mercancia.fechaIngreso" name="fechaIngreso">-->
+                </div>
+                <div class="form-group">
+                    <label for="start">Fecha Ingreso</label>
+
+                    <input type="date" id="start"  [(ngModel)]="mercancia.fechaIngreso"  name="fechaIngreso"
+                           value="2018-07-22"
+                           min="2018-01-01" max="2021-12-31">
+                                   
+                    <!--input type="text" class="from-control" [(ngModel)]="mercancia.fechaIngreso" name="fechaIngreso">-->
+                </div>
+                <div class="form-group">
+                    <label for="">Nombre Producto:</label>
+                    <input type="text" class="from-control" [(ngModel)]="mercancia.nombreProducto" name="nombreProducto">
+                </div>
+                <div class="form-group">
+                    <label for="">Nombre Usuario Modificación:</label>
+                    <input type="text" class="from-control" [(ngModel)]="mercancia.nombreUsuarioModificacion" name="nombreUsuarioModificacion">
+                </div>
+                <div class="form-group">
+                    <label for="">Usuario Creación</label>
+                    <input type="text" class="from-control" [(ngModel)]="mercancia.usuarioId" name="usuarioId">
+                </div>
+                <button (click)="GuardarMercancia(mercancia)" class="btn btn-danger">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
